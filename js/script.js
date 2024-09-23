@@ -2,7 +2,7 @@
 const blogBtn = document.getElementById('index-page')
 const donationBtn = document.getElementById('donation-btn')
 const historyBtn = document.getElementById('history-btn')
-const faqPageBtn = document.getElementById('faq-page')
+const faqPageBtn = document.getElementById('index-page')
 
 
 
@@ -59,13 +59,15 @@ blogBtn.addEventListener('click', function(){
 
 
 
+
+
 //----------------------------------Modal----------------------------------------------
 
 const myModal = document.getElementById('my_modal_5')
 const closeModal = document.getElementById('close-modal')
 
 
-//----------------------------------Donate Area Noakhali------------------------------------
+//----------------------------------Donation Area of Noakhali------------------------------------
 
 document.getElementById('donate-btn1').addEventListener('click', function(){
     const donateInput1 = inputFieldGetById('donate-Input1');
@@ -91,7 +93,7 @@ document.getElementById('donate-btn1').addEventListener('click', function(){
 
     // Validatation for input field NaN and empty
     if(isNaN(donateInput1) || donateInput1 <=0 ) { 
-        alert('Please Enter a valid number') 
+        alert('Please Enter a valid input') 
     }
     else {
         donateAmountElement.innerText = donateInput1.toFixed(2)
@@ -117,8 +119,11 @@ document.getElementById('donate-btn1').addEventListener('click', function(){
             <p class="text-md text-gray-500 bg-gray-300 p-3 rounded-md " >  ${ new Date().toLocaleDateString()} </p>
         `
         document.getElementById('history-section').appendChild(history)
-    };
 
+        
+    };
+    
+    
     
     
 })
@@ -145,7 +150,7 @@ document.getElementById('donate-btn-feni').addEventListener('click', function(){
     }
 
     if(isNaN(donateInputFeni) || donateInputFeni <=0 ) { 
-        return alert('Please Enter a valid number') 
+        return alert('Please Enter a valid input') 
     } else {
         donateAmountElement.innerText = donateInputFeni.toFixed(2)
 
@@ -200,7 +205,7 @@ document.getElementById('donate-btn-qouta').addEventListener('click', function()
     }
 
     if( isNaN(donateInputQuota) || donateInputQuota <= 0){
-        return alert('Please Enter a Valid Amount')
+        return alert('Please Enter a Valid input')
     } else {
         donateAmountElement.innerText = donateInputQuota.toFixed(2)
         // Calculate Balance
