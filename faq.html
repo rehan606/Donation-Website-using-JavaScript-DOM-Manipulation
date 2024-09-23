@@ -29,7 +29,7 @@
             <div class=" bg-[#F9F7F3] py-4 sticky top-0 z-50">
                 <div class=" container mx-auto navbar bg-[#F9F7F3] text-[#111111] sm:px-7 px-7">
                     <div class="navbar-start">
-                        <a id="faq-page" href="index.html" class="btn w-24 sm:w-32 bg-lime-400 font-semibold text-black border-0 hover:bg-black hover:text-white px-5" >FAQ</a>
+                        <a id="faq-page" href="index.html" class="btn w-24 sm:w-32  bg-gradient-to-r from-lime-500 to-lime-600 font-semibold text-black border-0 hover:bg-black hover:text-white px-5" >FAQ</a>
                     </div>
                     <div class="navbar-center space-x-3 flex flex-col sm:flex-row">
                         <img src="images/logo.png" alt="">
@@ -46,51 +46,51 @@
 
             <!-- Toggle Button  -->
             <div class="button-container text-center pb-8 mt-10 space-x-7">
-                <button class="btn bg-lime-400 font-semibold text-black w-36 hover:bg-black hover:text-white px-5 border-none" >Donation</button>
+                <button id="donation-btn-faq" class="  bg-gradient-to-r from-lime-500 to-lime-600 font-semibold text-black w-36 py-3  px-5  rounded-md border-2" >Donation</button>
 
-                <button class="btn bg-[#F9F7F3] font-semibold text-black w-28 hover:bg-black hover:text-white px-5 border-gray-300" >History</button>
+                <button id="history-btn-faq" class="  font-semibold  text-black w-28 py-3 px-5 rounded-md border-2 outline-none" >History</button>
             </div>
 
         </section>
 
 
         <!-- FaQ  -->
-        <section >
+        <section class="border-t-2" >
             <div class="container mx-auto pb-16 text-black px-7">
-                <div class="header mb-6">
-                    <h2 class="text-3xl font-bold">Important FAQ <i class="fa-regular fa-circle-question"></i> </h2>
+                <div class="header mb-6 mt-4">
+                    <h2 class="text-3xl font-bold text-gray-400">Important FAQ <i class="fa-regular fa-circle-question"></i> </h2>
                 </div>
 
                 <div class="accordion">
-                    <div class="join join-vertical w-full">
+                    <div class="join join-vertical w-full gap-2">
                         <div class="collapse collapse-arrow join-item border-gray-300 border">
                             <input type="radio" name="my-accordion-4" checked="checked" />
-                            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
-                            <div class="collapse-content">
+                            <div class="collapse-title text-xl font-medium bg-purple-400">What is the Document Object Model (DOM)?</div>
+                            <div class="collapse-content ">
                                 <p>The DOM is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, allowing developers to access and manipulate HTML and CSS dynamically using JavaScript.</p>
                             </div>
                         </div>
 
                         <div class="collapse collapse-arrow join-item border-gray-300 border">
                             <input type="radio" name="my-accordion-4" />
-                            <div class="collapse-title text-xl font-medium">What are DOM nodes and elements?</div>
-                            <div class="collapse-content">
+                            <div class="collapse-title text-xl font-medium bg-purple-400">What are DOM nodes and elements?</div>
+                            <div class="collapse-content ">
                                 <p>DOM nodes are the building blocks of the DOM tree. There are several types of nodes such as element nodes, text nodes, and attribute nodes. Element nodes represent HTML elements (like div, p, etc.), and text nodes represent the content within elements.</p>
                             </div>
                         </div>
 
                         <div class="collapse collapse-arrow join-item border-gray-300 border">
                             <input type="radio" name="my-accordion-4" />
-                            <div class="collapse-title text-xl font-medium">How can JavaScript manipulate the DOM?</div>
-                            <div class="collapse-content">
+                            <div class="collapse-title text-xl font-medium bg-purple-400">How can JavaScript manipulate the DOM?</div>
+                            <div class="collapse-content ">
                                 <p>avaScript can interact with the DOM using various methods like document.getElementById(), querySelector(), appendChild(), removeChild(), and setAttribute(). These methods allow developers to add, remove, or modify elements and their attributes on the page dynamically.</p>
                             </div>
                         </div>
 
                         <div class="collapse collapse-arrow join-item border-gray-300 border">
                             <input type="radio" name="my-accordion-4" />
-                            <div class="collapse-title text-xl font-medium">What is event handling in the DOM?</div>
-                            <div class="collapse-content">
+                            <div class="collapse-title text-xl font-medium bg-purple-400">What is event handling in the DOM?</div>
+                            <div class="collapse-content ">
                                 <p>Event handling refers to the way DOM elements respond to user interactions, such as clicks, key presses, or mouse movements. Using JavaScript, developers can listen for events (e.g., click, submit, keydown) on DOM elements and define specific actions to be taken when those events occur.</p>
                             </div>
                         </div>
@@ -99,27 +99,7 @@
             </div>
         </section>
 
-        <!-- Modul -->
-        <section>
-            <div class="container mx-auto px-7 ">
-                <!-- Open the modal using ID.showModal() method -->
-                <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
-                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle text-center w-64 md:w-96 mx-auto">
-                    <div class="modal-box bg-white ">
-                        <h3 class="text-xl font-bold text-black mb-4">Congrates!</h3>
-                        <img src="images/coin.png" alt="" class="mx-auto">
-                        <p class="py-4 text-sm">You Have donate for HumanKind</p>
-                        <h3 class="text-lg font-bold text-black">Successfully</h3>
-                        <div class="modal-action">
-                        <form method="dialog" class="mx-auto">
-                            <!-- if there is a button in form, it will close the modal -->
-                            <button class="btn bg-lime-400 text-black border-none hover:text-white">Close Confirmation</button>
-                        </form>
-                        </div>
-                    </div>
-                </dialog>
-            </div>
-        </section>
+        
 
         <section class="bg-[#F9F7F3] p-12"></section>
     </body>

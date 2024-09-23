@@ -4,21 +4,58 @@ const donationBtn = document.getElementById('donation-btn')
 const historyBtn = document.getElementById('history-btn')
 const faqPageBtn = document.getElementById('faq-page')
 
-//----------------------------- Donation and History Button----------------------------
-document.getElementById('donation-btn').addEventListener('click', function(){
+
+
+//----------------------------Donation Button Click event-------------------------------
+
+donationBtn.addEventListener('click', function(){
     showSectionById('donation-content')
+
+    // Add Class in History Tab Btn
+    donationBtn.classList.add(
+        "text-white",
+        "bg-gradient-to-r",
+        "from-lime-500",
+        "to-lime-600"
+    );
+
+    // Remove Class From Assistan Tab Btn
+    historyBtn.classList.remove(
+        "text-white",
+        "bg-gradient-to-r",
+        "from-lime-500",
+        "to-lime-600"
+    );
 })
 
-document.getElementById('history-btn').addEventListener('click', function(){
+//----------------------------History Button Click event-------------------------------
+
+historyBtn.addEventListener('click', function(){
     showSectionById('history-section')
+
+    // Add Class in History Tab Btn
+    historyBtn.classList.add(
+        "text-white",
+        "bg-gradient-to-r",
+        "from-lime-500",
+        "to-lime-600"
+    );
+
+    // Remove Class From Assistan Tab Btn
+    donationBtn.classList.remove(
+        "text-white",
+        "bg-gradient-to-r",
+        "from-lime-500",
+        "to-lime-600"
+    );
 })
+
+
 //-----------------------------Blog Button Page Redirect-------------------------------
 
 blogBtn.addEventListener('click', function(){
     window.location.href = 'faq.html';
 })
-
-
 
 
 

@@ -13,9 +13,3 @@ function inputFieldGetById(id){
     return inputValue
 }
 
-// All Inner Text Ampunt
-
-// function innerTextById(id){
-//     const innerText = parseFloat(document.getElementById(id).innerText)
-//     return innerText
-// }
