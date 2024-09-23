@@ -22,11 +22,11 @@
     <body class="bg-white ">
 
         <!-- Nav bar  -->
-        <section >     
-            <div class=" bg-[#F9F7F3] py-4">
+        <section class="backdrop-blur-md sticky top-0 z-50" >     
+            <div class=" bg-[#F9F7F3] py-4 " >
                 <div class=" container mx-auto navbar bg-[#F9F7F3] text-[#111111] px-7">
                     <div class="navbar-start">
-                        <a href="faq.html" class="btn w-24 sm:w-32 bg-[#B4F461] font-semibold text-black border-0 hover:bg-black hover:text-white px-5" >Blog</a>
+                        <a id="index-page" class="btn w-24 sm:w-32 bg-lime-400 font-semibold text-black border-0 hover:bg-black hover:text-white px-5" >Blog</a>
                     </div>
                     <div class="navbar-center space-x-3 flex flex-col sm:flex-row">
                         <img src="images/logo.png" alt="">
@@ -35,17 +35,17 @@
                     <div class="navbar-end">
                         <div class="amount flex space-x-2 ">
                             <div><img src="images/coin.png" alt="" ></div>
-                            <p class="font-bold text-[#11111173]"> <span  >5500</span> BDT</p>
+                            <p class="font-bold text-[#11111173]"> <span id="main-balance" >15500</span> BDT</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Toggle Button  -->
+            <!--  Button  -->
             <div class="button-container text-center pb-8 mt-10 space-x-7">
-                <button class="btn bg-[#B4F461] font-semibold text-black w-36 hover:bg-black hover:text-white px-5 border-none" >Donation</button>
+                <button id="donation-btn" class="btn bg-lime-400 font-semibold text-black w-36  px-5 border-none" >Donation</button>
 
-                <button class="btn bg-[#F9F7F3] font-semibold text-black w-28 hover:bg-black hover:text-white px-5 border-gray-300" >History</button>
+                <button id="history-btn" class="btn bg-stone-300 font-semibold text-black w-28  px-5 border-gray-300" >History</button>
             </div>
 
         </section>
@@ -54,7 +54,7 @@
 
         <!-- Content Area -->
         <section>
-            <div class="container mx-auto pb-8 px-7">
+            <div id="donation-content" class="container mx-auto pb-8 px-7">
                 <!-- Single Content Box  1-->
                 <div class="content-area flex flex-col md:flex-row gap-10 w-full p-5 border rounded-lg items-center mb-6 ">
                     <div class="image w-full ">
@@ -64,17 +64,33 @@
                     <!-- Text Content Box -->
                     <div class="content w-full ">
                         <div class="text">
-                            <div class="donation  space-x-2 flex bg-gray-300 rounded-lg p-3 w-4/12 md:w-3/12">
+                            <div class="donation  space-x-2 flex bg-gray-300 rounded-lg p-3 w-4/12 md:w-4/12">
                                 <img src="images/coin.png" alt="" >
-                                <p class="font-bold text-[#11111173]"> <span  >5000</span> BDT</p>
+                                <p class="font-bold text-[#11111173]"> <span id="donate-amount1" >500</span> BDT</p>
                             </div>
                             
 
                             <h2 id="donate-title" class="font-bold text-black text-xl mt-6 mb-6" >Donate for Flood at Noakhali, Bangladesh</h2>
                             <p class="mb-8 text-md font-light text-black"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-                            <input type="text" placeholder="Write Donation Amount" class="input input-bordered outline-none w-full  bg-transparent block mb-6" />
-                            <button class="btn bg-[#B4F461] border-none font-semibold text-black  hover:bg-black hover:text-white px-5 w-full text-lg" >Donation</button>
+                            <input id="donate-Input1" type="text" placeholder="Write Donation Amount" class="input input-bordered outline-none w-full  bg-transparent block mb-6" />
+                            <button id="donate-btn1" class="btn  bg-lime-400 border-none font-semibold text-black  hover:bg-black hover:text-white px-5 w-full text-lg" onclick="my_modal_5.showModal()">Donation</button>
+
+                            <!-- Modal  -->
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle text-center w-64 md:w-96 mx-auto">
+                                <div class="modal-box bg-white ">
+                                    <h3 class="text-xl font-bold text-black mb-4">Congrates!</h3>
+                                    <img src="images/coin.png" alt="" class="mx-auto">
+                                    <p class="py-4 text-sm">You Have donate for HumanKind</p>
+                                    <h3 class="text-lg font-bold text-black">Successfully</h3>
+                                    <div class="modal-action">
+                                    <form method="dialog" class="mx-auto">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button id="close-modal" class="btn bg-lime-400 text-black border-none hover:text-white">Close Confirmation</button>
+                                    </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </div>
                     </div>
                 </div>
@@ -88,17 +104,18 @@
                     <!-- Text Content Box -->
                     <div class="content w-full ">
                         <div class="text">
-                            <div class="donation  space-x-2 flex bg-gray-300 rounded-lg p-3 w-4/12 md:w-3/12">
+                            <div class="donation  space-x-2 flex bg-gray-300 rounded-lg p-3 w-4/12 md:w-4/12">
                                 <img src="images/coin.png" alt="" >
-                                <p class="font-bold text-[#11111173]"> <span  >5000</span> BDT</p>
+                                <p class="font-bold text-[#11111173]"> <span id="donate-amount-feni" >00</span> BDT</p>
                             </div>
                             
 
-                            <h2 id="donate-title" class="font-bold text-black text-xl mt-6 mb-6" >Donate for Flood Relief in Feni,Bangladesh</h2>
+                            <h2 id="donate-title2" class="font-bold text-black text-xl mt-6 mb-6" >Donate for Flood Relief in Feni,Bangladesh</h2>
                             <p class="mb-8 text-md font-light text-black"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-                            <input type="text" placeholder="Write Donation Amount" class="input input-bordered outline-none w-full  bg-transparent block mb-6" />
-                            <button class="btn bg-[#B4F461] border-none font-semibold text-black  hover:bg-black hover:text-white px-5 w-full text-lg" >Donation</button>
+                            <input id="donate-Input-feni" type="text" placeholder="Write Donation Amount" class="input input-bordered outline-none w-full  bg-transparent block mb-6" />
+                            <button id="donate-btn-feni" class="btn bg-lime-400 border-none font-semibold text-black  hover:bg-black hover:text-white px-5 w-full text-lg" onclick="my_modal_5.showModal()" >Donation</button>
+
                         </div>
                     </div>
                 </div>
@@ -112,17 +129,19 @@
                     <!-- Text Content Box -->
                     <div class="content w-full ">
                         <div class="text">
-                            <div class="donation  space-x-2 flex bg-gray-300 rounded-lg p-3 w-4/12 md:w-3/12">
+                            <div class="donation  space-x-2 flex bg-gray-300 rounded-lg p-3 w-4/12 md:w-4/12">
                                 <img src="images/coin.png" alt="" >
-                                <p class="font-bold text-[#11111173]"> <span  >5000</span> BDT</p>
+                                <p class="font-bold text-[#11111173]"> <span id="donate-amount-quota" >00</span> BDT</p>
                             </div>
                             
 
-                            <h2 id="donate-title" class="font-bold text-black text-xl mt-6 mb-6" >Aid for Injured in the Quota Movement</h2>
+                            <h2 id="donate-title3" class="font-bold text-black text-xl mt-6 mb-6" >Aid for Injured in the Quota Movement</h2>
                             <p class="mb-8 text-md font-light text-black"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
 
-                            <input type="text" placeholder="Write Donation Amount" class="input input-bordered outline-none w-full  bg-transparent block mb-6" />
-                            <button class="btn bg-[#B4F461] border-none font-semibold text-black  hover:bg-black hover:text-white px-5 w-full text-lg" >Donation</button>
+                            <input id="donate-Input-quota" type="text" placeholder="Write Donation Amount" class="input input-bordered outline-none w-full  bg-transparent block mb-6" />
+                            <button id="donate-btn-qouta" class="btn bg-lime-400 border-none font-semibold text-black  hover:bg-black hover:text-white px-5 w-full text-lg" onclick="my_modal_5.showModal()" >Donation</button>
+
+                            
                         </div>
                     </div>
                 </div>
@@ -130,45 +149,25 @@
             
         </section>
 
-        <!-- Modul -->
-        <section>
-            <div class="container mx-auto px-7">
-                <!-- Open the modal using ID.showModal() method -->
-                <button class="btn" onclick="my_modal_5.showModal()">open modal</button>
-                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle text-center w-64 md:w-96 mx-auto">
-                    <div class="modal-box bg-white ">
-                        <h3 class="text-xl font-bold text-black mb-4">Congrates!</h3>
-                        <img src="images/coin.png" alt="" class="mx-auto">
-                        <p class="py-4 text-sm">You Have donate for HumanKind</p>
-                        <h3 class="text-lg font-bold text-black">Successfully</h3>
-                        <div class="modal-action">
-                        <form method="dialog" class="mx-auto">
-                            <!-- if there is a button in form, it will close the modal -->
-                            <button class="btn bg-[#B4F461] text-black border-none hover:text-white">Close Confirmation</button>
-                        </form>
-                        </div>
-                    </div>
-                </dialog>
-            </div>
-        </section>
+        
 
         <!-- History Section  -->
         
-        <section>
-            <div class="container mx-auto px-7">
+        <section class="border-t-2">
+            <div id="history-section" class="container mx-auto px-7 hidden ">
                 <ul id="history-section">
-                    <li>History</li>
+                    <li class="mb-4 text-2xl mt-4" >Donation History</li>
                 </ul>
             </div>
         </section>
 
         <!-- ------------------------------------ -->
-        <section class="bg-[#F9F7F3] p-12"></section>
+        <section class="bg-[#F9F7F3] p-12 "></section>
 
 
 
         
-
+        <script src="js/function.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
