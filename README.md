@@ -3,7 +3,7 @@
 <p align="center">A responsive Donation Website built using HTML, CSS, and JavaScript. This repository contains all the code necessary to create a simple and functional donation platform that can be customized to suit different causes or organizations."</p>
 
 <p align="center">
-   👉 <a target='_blank' href=" https://rehan606.github.io/Donation-Website-using-JavaScript-DOM-Manipulation/">📱 Visit this Project</a>
+   👉 <a target='_blank' href="https://rehan606.github.io/Donation-Website-using-JavaScript-DOM-Manipulation/">📱 Visit this Project </a>
 </p> 
 
  <h2 id="layout">🎨Project Layout</h2>
