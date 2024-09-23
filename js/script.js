@@ -89,9 +89,7 @@ closeModal.addEventListener('click', function(){
     myModal.style.display = 'none';
 })
 
-// document.getElementById('close-modal').addEventListener('click', function() {
-//     document.getElementById('my_modal_5').style.display = 'none';
-// });
+
 
 //----------------------------------Donate Area feni------------------------------------
 
@@ -142,9 +140,7 @@ document.getElementById('donate-btn-feni').addEventListener('click', function(){
 
 })
 
-// closeModal.addEventListener('click', function(){
-//     myModal.style.display = 'none';
-// })
+
 
 //-----------------------------Donate for Quota Protest------------------------------------
  
@@ -196,9 +192,7 @@ document.getElementById('donate-btn-qouta').addEventListener('click', function()
 
 })
 
-// closeModal.addEventListener('click', function(){
-//     myModal.style.display = 'none';
-// })
+
 
 
 
