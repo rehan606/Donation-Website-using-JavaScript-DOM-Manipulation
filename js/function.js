@@ -9,7 +9,7 @@ function showSectionById (id){
 
 // All input value get by ID 
 function inputFieldGetById(id){
-    const inputValue = parseFloat(document.getElementById(id).value);
+    const inputValue = Number(document.getElementById(id).value);
     return inputValue
 }
 
