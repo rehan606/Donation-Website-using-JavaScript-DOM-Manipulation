@@ -11,7 +11,7 @@ const faqPageBtn = document.getElementById('index-page')
 donationBtn.addEventListener('click', function(){
     showSectionById('donation-content')
 
-    // Add Class in History Tab Btn
+    // Add Class in donation Tab Btn
     donationBtn.classList.add(
         "text-white",
         "bg-gradient-to-r",
@@ -19,7 +19,7 @@ donationBtn.addEventListener('click', function(){
         "to-lime-600"
     );
 
-    // Remove Class From Assistan Tab Btn
+    // Remove Class From history Tab Btn
     historyBtn.classList.remove(
         "text-white",
         "bg-gradient-to-r",
@@ -41,7 +41,7 @@ historyBtn.addEventListener('click', function(){
         "to-lime-600"
     );
 
-    // Remove Class From Assistan Tab Btn
+    // Remove Class From donation Tab Btn
     donationBtn.classList.remove(
         "text-white",
         "bg-gradient-to-r",
