@@ -116,7 +116,7 @@ document.getElementById('donate-btn1').addEventListener('click', function(){
         history.className = "bg-white p-4 rounded-md border-2 border-gray-300 mb-4 shadow-lg";
         history.innerHTML = `
             <p class="text-lg text-gray-500" > <span class="font-bold text-blue-500"> ${donateInput1} Tk. </span>  ${donateTitle1} </p>
-            <p class="text-md text-gray-500 bg-gray-300 p-3 rounded-md " >  ${ new Date().toLocaleDateString()} </p>
+            <p class="text-md text-gray-500 bg-gray-300 p-3 rounded-md " >  ${ new Date().toLocaleString()} </p>
         `
         document.getElementById('history-section').appendChild(history)
 
@@ -171,7 +171,7 @@ document.getElementById('donate-btn-feni').addEventListener('click', function(){
         history.className = "bg-white p-4 rounded-md border-2 border-gray-300 mb-4 shadow-lg";
         history.innerHTML = `
             <p class="text-lg text-gray-500" > <span class="font-bold text-blue-500"> ${donateInputFeni} Tk. </span>  ${donateTitle2} </p>
-            <p class="text-md text-gray-500 bg-gray-300 p-3 rounded-md " >  ${ new Date().toLocaleDateString()} </p>
+            <p class="text-md text-gray-500 bg-gray-300 p-3 rounded-md " >  ${ new Date().toLocaleString()} </p>
         `
         document.getElementById('history-section').appendChild(history)
     }
@@ -225,7 +225,7 @@ document.getElementById('donate-btn-qouta').addEventListener('click', function()
         history.className = "bg-white p-4 rounded-md border-2 border-gray-300 mb-4 shadow-lg";
         history.innerHTML = `
             <p class="text-lg text-gray-500" > <span class="font-bold text-blue-500"> ${donateInputQuota} Tk. </span>  ${donateTitle3} </p>
-            <p class="text-md text-gray-500 bg-gray-300 p-3 rounded-md " >  ${ new Date().toLocaleTimeString() } </p>
+            <p class="text-md text-gray-500 bg-gray-300 p-3 rounded-md " >  ${ new Date().toLocaleString() } </p>
         `
         document.getElementById('history-section').appendChild(history)
     }
